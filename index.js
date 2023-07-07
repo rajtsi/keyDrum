@@ -36,6 +36,22 @@ document.addEventListener("keydown",function(event)
         break;
    }
 
+   var elementi=document.querySelector("." + event.key) ;
+
+
+   
+       elementi.classList.add("pressed");
+     
+     
+     setTimeout(function() {
+       elementi.classList.remove("pressed");
+     }, 200);
+   
+
+   
+   
+
+
 }
 
 );
@@ -78,6 +94,18 @@ document.addEventListener("keydown",function(event)
     default:
         break;
    }
+
+
+   var elementi=document.querySelector("." + this.innerHTML) ;
+
+
+   
+   elementi.classList.add("pressed");
+ 
+ 
+ setTimeout(function() {
+   elementi.classList.remove("pressed");
+ }, 200);
 
 }
 
