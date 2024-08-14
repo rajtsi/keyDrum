@@ -1,7 +1,7 @@
 
 document.addEventListener("keydown",function(event)
 {
-
+ this.classList.toggle("white");
    switch (event.key) {
     case "w": var audiosound=new Audio("sounds/tom-1.mp3");
                audiosound.play();
@@ -60,7 +60,7 @@ document.addEventListener("keydown",function(event)
  for(i=0;i<7;i++)
  { document.querySelectorAll("button")[i].addEventListener("click",function()
 {
- 
+ this.classList.toggle("white");
    switch (this.innerHTML) {
     case "w": var audiosound=new Audio("sounds/tom-1.mp3");
                audiosound.play();
